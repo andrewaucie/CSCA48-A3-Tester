@@ -1,4 +1,6 @@
 # CSCA48 A3 Randomized Tester
+** Made by: Andrew Aucie **
+
 Move all 3 files to the A3 folder
 
 Add this line to the User struct in graffit.c:

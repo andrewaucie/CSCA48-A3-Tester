@@ -9,17 +9,9 @@
 #define SIZE MAT_SIZE
 /* 
  * CSCA48 A3 Tester - Andrew Aucie 
-
-Add this line to the User struct in graffit.c:
-struct friend_node_struct* userList;
-
-Initialize user->userList = allUsers in create_user()
-
 */
 
-
 int input, value, streamVal=0;
-FriendNode *allUsers;
 FILE *terminal;
 
 void nextRandom(int value, int streamVals) {
@@ -84,7 +76,7 @@ int main() {
     input = value;
     PlantSeeds(value);
     int brand_matrix[SIZE][SIZE];
-    char brand_names[SIZE][2], brand_string[1024]="";
+    char brand_names[SIZE][3], brand_string[1024]="";
     for (int i=0; i<SIZE; i++) {
         brand_names[i][0] = i+65;
         brand_names[i][1] = '\0';
@@ -145,11 +137,10 @@ int main() {
         char tmp_num[1024];
         sprintf(tmp_num, "%d", i);
         strcat(name, tmp_num);
-        User *tmp_user = create_user(name);
-        allUsers = tmp_user->userList;
+        create_user(name);
     }
     int totalSuggested, followed;
-    char tmp_brand[]="";
+    char tmp_brand[2];
     tmp_brand[1]='\0';
     for (int i=0; i<SIZE; i++) {
         tmp_brand[0] = i+65;

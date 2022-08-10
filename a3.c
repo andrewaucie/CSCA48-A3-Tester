@@ -76,7 +76,7 @@ int main() {
     input = value;
     PlantSeeds(value);
     int brand_matrix[SIZE][SIZE];
-    char brand_names[SIZE][3], brand_string[1024]="";
+    char brand_names[SIZE][2], brand_string[1024]="";
     for (int i=0; i<SIZE; i++) {
         brand_names[i][0] = i+65;
         brand_names[i][1] = '\0';

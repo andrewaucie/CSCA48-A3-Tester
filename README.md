@@ -1,9 +1,6 @@
 # CSCA48 A3 Randomized Tester
 ** Made by: Andrew Aucie **
 
-Move all 3 files to the A3 folder
+Instructions: Move all 3 files to your A3 folder
 
-Add this line to the User struct in graffit.c:
-struct friend_node_struct* userList;
-
-Initialize user->userList = allUsers in create_user()
+This tester generates unlimited randomized test cases for add_suggested_friends(), follow_suggested_brands(), get_degrees_of_connections().
